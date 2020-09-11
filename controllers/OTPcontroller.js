@@ -38,7 +38,9 @@ module.exports.checkOtp = function(req, res){
         });
 
     } else {
-        // req.flash('error', 'Verificatio failed');
-        return res.redirect('back');
+        return res.render('VerificationFailed', {
+            title: "Home",
+        });
+
     }
 }

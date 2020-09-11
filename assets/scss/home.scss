@@ -1,35 +1,37 @@
-h1 {
-    text-align: center;
-    color: crimson;
-}
 
 #home-container {
-    display: flex;
-    margin-top: 100px;
 
     #main {
-        flex: 60%;
-        margin-left: 35px;
-
-
         
         .login-box {
-            position: absolute;
-            top: 50%;
+            margin-top: 30px;
+            position: relative;
+            top: 40%;
             left: 50%;
-            width: 400px;
+            height: 500px;
+            width: 500px;
             padding: 40px;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -0%);
             background: rgba(0,0,0,.5);
             box-sizing: border-box;
             box-shadow: 0 15px 25px rgba(0,0,0,.6);
             border-radius: 10px;
+            #logo {
+                display: block;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 10px;
+              margin-bottom: 20px;
+              height: 70px;
+              width: 80%;
+            }
         }
+        
         
         .login-box h2 {
             margin: 0 0 30px;
             padding: 0;
-            color: #fff;
+            color: #b34242;
             text-align: center;
         }
         
@@ -41,7 +43,7 @@ h1 {
             width: 100%;
             padding: 10px 0;
             font-size: 16px;
-            color: #fff;
+            color: #b34242;
             margin-bottom: 30px;
             border: none;
             border-bottom: 1px solid #fff;
@@ -54,7 +56,7 @@ h1 {
             left: 0;
             padding: 10px 0;
             font-size: 16px;
-            color: #fff;
+            color: #b34242;
             pointer-events: none;
             transition: .5s;
         }
@@ -83,7 +85,7 @@ h1 {
         
         .login-box a:hover {
             background: #03e9f4;
-            color: #fff;
+            color: #e86464;
             border-radius: 5px;
             box-shadow: 0 0 5px #03e9f4,
             0 0 25px #03e9f4,
@@ -173,13 +175,4 @@ h1 {
         
     }
 
-    #aside {
-        flex: 40%;
-        margin-right: 35px;
-        
-        h2{
-            text-align: right;
-            color: darkblue;
-        }
-    }
 }
