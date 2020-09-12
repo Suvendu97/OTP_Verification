@@ -8,8 +8,10 @@ console.log('router loaded');
 // setup requested routes
 
 router.get('/', OTPcontroller.home);
-router.post('/', OTPcontroller.generateOtp);
-router.get('/otp', OTPcontroller.OTP);
-router.post('/otp', OTPcontroller.checkOtp);
+router.post('/generateOTP', OTPcontroller.generateOtp);
+router.post('/resendOTP', OTPcontroller.resend);
+router.get('/otpSent', OTPcontroller.sentOTP);
+router.post('/checkOTP', OTPcontroller.checkOtp);
+
 // exports this file
 module.exports = router;
